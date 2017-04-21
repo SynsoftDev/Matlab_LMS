@@ -1,0 +1,35 @@
+/*
+  global transition definitions -- these are used all over the place for effects
+  though it does feel kinda messy having them be global implicity
+*/
+
+/* for nodal */
+.expand-transition {
+  transition: all 0.5s ease;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.expand-enter, .expand-leave {
+  max-height: 0;
+  opacity: 0;
+}
+
+
+
+.fade-transition {
+  transition: all .2s ease;
+}
+.fade-enter, .fade-leave {
+  opacity: 0;
+}
+
+
+
+.img-transition {
+  transition: all 1s ease;
+  max-height: 1000px;
+}
+.img-enter, .img-leave {
+  max-height: 0;
+}
